@@ -1,0 +1,35 @@
+@import '../variables.css';
+
+.hinge {
+    background-color: var(--primary-dex-color);
+    height: var(--dex-total-height);
+    width: var(--dex-hinge-width);
+    position: relative;
+
+    box-shadow: calc(var(--dex-total-height) * 0.015) 0px 0px #c9020b;
+    z-index: 1;
+
+    border-left: 1px solid var(--primary-dex-shadow-color);
+    border-right: 1px solid var(--primary-dex-shadow-color);
+}
+
+.hinge::after{
+    content: '';
+    width: var(--dex-hinge-width);
+    height: 20px;
+    background: var(--primary-dex-shadow-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+}
+
+.hinge::before{
+    content: '';
+    width: var(--dex-hinge-width);
+    height: 20px;
+    background: var(--primary-dex-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+}
