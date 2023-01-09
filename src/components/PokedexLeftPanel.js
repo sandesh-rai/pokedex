@@ -1,16 +1,16 @@
 import React from 'react'
+import PokedexIndicator from './PokedexIndicator'
 import styles from './PokedexLeftPanel.module.css'
+import PokedexLeftPanelDiagonalDetail from './PokedexLeftPanelDiagonalDetail'
 
 export default function PokedexLeftPanel() {
   return (
     <div className={styles.leftPanel}>
       <div className={styles.leftPanelUpper}>
-
+        <PokedexIndicator/>
       </div>
       <div className={styles.leftPanelLower}>
-        <div className={styles.leftPanelTriangle}>
-          <div></div>
-        </div>
+        <PokedexLeftPanelDiagonalDetail/>
       </div>
     </div>
   )

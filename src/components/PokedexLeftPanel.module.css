@@ -14,6 +14,7 @@
 }
 
 .leftPanelUpper {
+    display: flex;
     border-bottom: calc(var(--dex-panel-width) * 0.025) solid var(--primary-dex-shadow-color);
 }
 
