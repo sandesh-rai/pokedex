@@ -1,0 +1,12 @@
+@import '../App.css';
+
+.container_outer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.panels {
+    display: flex;
+    margin: auto;
+}

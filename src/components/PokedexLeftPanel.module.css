@@ -1,0 +1,7 @@
+@import '../App.css';
+
+.container {
+    background-color: var(--primary-dex-color);
+    height: var(--dex-total-height);
+    width: var(--dex-panel-width);
+}
