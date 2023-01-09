@@ -16,20 +16,20 @@
 .hinge::after{
     content: '';
     width: var(--dex-hinge-width);
-    height: 20px;
+    height: calc(var(--dex-hinge-width)/2);
     background: var(--primary-dex-shadow-color);
     border-radius: 50%;
     position: absolute;
-    bottom: -10px;
+    bottom: calc((var(--dex-hinge-width)/-4) + 2px);
 }
 
 .hinge::before{
     content: '';
     width: var(--dex-hinge-width);
-    height: 20px;
+    height: calc(var(--dex-hinge-width)/2);
     background: var(--primary-dex-color);
     border-radius: 50%;
     position: absolute;
-    top: -10px;
+    top: calc((var(--dex-hinge-width)/-4) + 2px);
     z-index: -1;
 }
