@@ -1,5 +1,5 @@
 import React from 'react'
-import PokedexIndicator from './PokedexIndicator'
+import PokedexIndicator from './PokedexIndicatorPrimary'
 import styles from './PokedexLeftPanel.module.css'
 import PokedexLeftPanelDiagonalDetail from './PokedexLeftPanelDiagonalDetail'
 
