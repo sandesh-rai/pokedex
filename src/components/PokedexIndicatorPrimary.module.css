@@ -2,7 +2,7 @@
     height: calc(var(--dex-total-height)*0.17);
     width: calc(var(--dex-total-height)*0.17);
     border-radius: 50%;
-    margin: auto 0.75rem auto;
+    margin: auto 1.5rem auto;
     background-color: var(--secondary-dex-color);
     position: relative;
 }

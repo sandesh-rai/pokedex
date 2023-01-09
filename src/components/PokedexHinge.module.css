@@ -21,6 +21,7 @@
     border-radius: 50%;
     position: absolute;
     bottom: calc((var(--dex-hinge-width)/-4) + 2px);
+    z-index: 1;
 }
 
 .hinge::before{
@@ -33,3 +34,16 @@
     top: calc((var(--dex-hinge-width)/-4) + 2px);
     z-index: -1;
 }
+
+.hinge > div {
+    position: absolute;
+    height: calc(var(--dex-total-height) * 0.8);
+    width: calc(var(--dex-hinge-width) * 0.2);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fb5b7a;
+    border-radius: var(--dex-border-radius);
+}
+
+

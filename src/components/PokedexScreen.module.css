@@ -1,0 +1,46 @@
+@import '../variables.css';
+
+.screenContainer {
+    display: flex;
+    width: calc(var(--dex-panel-width) * 0.7);
+    height: calc(var(--dex-total-height) * 0.75 * 0.5);
+    background-color: var(--secondary-dex-color);
+    z-index: 3;
+    border-radius: 2px 2px 2px 45px;
+    margin: calc(var(--dex-total-height) * 0.75 * 0.05) auto;
+    position: relative;
+}
+
+.screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--dex-panel-width) * 0.8 * 0.7);
+    height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.7);
+    background: #00dbff;
+    border-radius: 16px;
+    
+}
+
+.screen > img {
+    max-width: calc(var(--dex-panel-width) * 0.8 * 0.7);
+    max-height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.7);
+    display: flex;
+    margin: auto;
+}
+
+.bezelDots {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bezelDots > div {
+    height: calc(var(--dex-total-height)*0.02);
+    width: calc(var(--dex-total-height)*0.02);
+    border-radius: 50%;
+    background-color: var(--primary-dex-color);
+    margin: calc(var(--dex-total-height)*0.02) calc(var(--dex-total-height)*0.015);
+}
