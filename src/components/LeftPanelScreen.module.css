@@ -1,0 +1,79 @@
+@import "../variables.css";
+
+.screenContainer {
+  display: flex;
+  width: calc(var(--dex-panel-width) * 0.7);
+  height: calc(var(--dex-total-height) * 0.75 * 0.5);
+  background-color: var(--secondary-dex-color);
+  z-index: 3;
+  border-radius: 10px 10px 10px 45px;
+  margin: calc(var(--dex-total-height) * 0.75 * 0.05) auto;
+  position: relative;
+  border-bottom: calc(var(--dex-total-height) * 0.01) solid grey;
+}
+
+.screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(var(--dex-panel-width) * 0.8 * 0.7);
+  height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.7);
+  background: var(--main-screen-color);
+  border-top: calc(var(--dex-panel-width) * 0.015) solid #00c5e6;
+  border-radius: 16px;
+}
+
+.screen > img {
+  max-width: calc(var(--dex-panel-width) * 0.8 * 0.7);
+  max-height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.7);
+  display: flex;
+  margin: auto;
+}
+
+.bezelTop {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.bezelTop > div {
+  height: calc(var(--dex-total-height) * 0.02);
+  width: calc(var(--dex-total-height) * 0.02);
+  border-radius: 50%;
+  background-color: var(--primary-dex-color);
+  margin: calc(var(--dex-total-height) * 0.02)
+    calc(var(--dex-total-height) * 0.015);
+}
+
+.bezelBottom {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: calc(var(--dex-panel-width) * 0.7);
+  height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.15);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bezelBottomDot {
+  height: calc(var(--dex-total-height) * 0.03);
+  width: calc(var(--dex-total-height) * 0.03);
+  border-radius: 50%;
+  background-color: var(--primary-dex-color);
+  margin-left: calc(var(--dex-panel-width) * 0.07);
+}
+
+.bezelBottomLines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.15);
+}
+
+.bezelBottomLines > div:not(:last-child):not(:first-child) {
+  border-bottom: 3px solid black;
+  width: calc(var(--dex-total-height) * 0.04);
+  margin-right: calc(var(--dex-panel-width) * 0.0375);
+}
