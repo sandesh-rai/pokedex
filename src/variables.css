@@ -26,7 +26,7 @@
   --dex-total-height: clamp(200px, 50vw, 700px);
   --dex-panel-width: calc(var(--dex-total-height) / 1.5);
   --dex-hinge-width: calc(var(--dex-total-height) * 0.1);
-  --dex-border-radius: 23px;
+  --dex-border-radius: calc(var(--dex-panel-width) * 0.1);
 
   --dex-triangle-width: calc(var(--dex-total-height) * 0.12);
 }
