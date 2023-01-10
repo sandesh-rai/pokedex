@@ -9,10 +9,16 @@
   position: relative;
   margin-top: auto;
 
-  border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
+  border: calc(var(--dex-total-height) * 0.017) solid
+    var(--primary-dex-border-right-color);
 
   display: grid;
   grid-template-rows: 25% 25% 50%;
+}
+
+.rightPanel,
+rightPanel * {
+  box-sizing: border-box;
 }
 
 .rightPanel::after {
@@ -20,8 +26,10 @@
   content: "";
   height: calc(var(--dex-total-height) / 4);
   width: var(--dex-panel-width);
-  bottom: calc(var(--dex-total-height) * -0.05);
-  left: 0px;
+  bottom: calc(
+    (var(--dex-total-height) * -0.05) + (calc(var(--dex-total-height) * 0.017))
+  );
+  left: calc(var(--dex-total-height) * -0.017);
   background-color: var(--primary-dex-shadow-color);
   border-bottom-right-radius: var(--dex-border-radius);
   border-bottom-left-radius: calc(var(--dex-border-radius) / 3);
@@ -33,13 +41,56 @@
   content: "";
 
   background-color: var(--primary-dex-color);
-  border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
+  border-left: calc(var(--dex-total-height) * 0.017) solid
+    var(--primary-dex-border-right-color);
 
   height: var(--dex-triangle-width);
   width: calc(var(--dex-panel-width) * 0.45);
   top: calc(var(--dex-total-height) * -0.12);
   left: calc(var(--dex-total-height) * -0.017);
-  z-index: -1;
+  z-index: 1;
   border-top: calc(var(--dex-panel-width) * 0.025) solid
-    var(--primary-dex-shadow-color);
+    var(--primary-dex-border-right-color);
+}
+
+.rightPanelTriangle {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: calc(var(--dex-total-height) * -0.12);
+  left: calc(
+    (var(--dex-panel-width) * 0.45) + (var(--dex-total-height) * -0.017) +
+      (var(--dex-total-height) * 0.016)
+  );
+  border-bottom: var(--dex-triangle-width) solid var(--primary-dex-color);
+  border-right: var(--dex-triangle-width) solid transparent;
+}
+
+.rightPanelTriangle::after {
+  position: absolute;
+  content: "";
+  border-bottom: calc(var(--dex-panel-width) * 0.025) solid
+    var(--primary-dex-border-right-color);
+  width: calc(var(--dex-total-height) * 0.172);
+  transform: rotate(45deg);
+  transform-origin: left;
+  z-index: 1;
+  top: calc((var(--dex-total-height) * -0.002));
+  left: calc((var(--dex-total-height) * -0.005));
+}
+
+.rightPanelTriangle:before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  bottom: calc(
+    var(--dex-triangle-width) * -1 - (var(--dex-triangle-width) * 0.495)
+  );
+  right: calc(
+    var(--dex-triangle-width) * -1 - (var(--dex-triangle-width) * 0.25)
+  );
+  background: var(--primary-dex-color);
+  height: calc(var(--dex-triangle-width) * 0.5);
+  width: calc(var(--dex-triangle-width) * 0.5);
 }

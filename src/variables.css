@@ -1,32 +1,32 @@
 :root {
-    /* colors */
-    --primary-dex-color: #f10020;
-    --primary-dex-shadow-color: #950015;
-    --primary-dex-inner-color: #C52637;
-    --secondary-dex-color: #dedede;
-    --main-screen-color: #232323;
-    --secondary-screen-color: #292a27;
-    --primary-buttons-color: #00adff;
-    --secondary-buttons-color: #00adff;
-    --dark-buttons-color: #00322c;
-    --main-indicator-color: #006ca3;
-    --main-indicator-highlight-color: #00adff;
-    --secondary-indicator-red-color: #cd001d;
-    --secondary-indicator-yellow-color: #efd800;
-    --secondary-indicator-green-color: #196d2f;
+  /* colors */
+  --primary-dex-color: #f10020;
+  --primary-dex-shadow-color: #950015;
+  --primary-dex-inner-color: #c52637;
+  --primary-dex-border-right-color: #c9020b;
+  --secondary-dex-color: #dedede;
+  --main-screen-color: #232323;
+  --secondary-screen-color: #292a27;
+  --primary-buttons-color: #00adff;
+  --secondary-buttons-color: #00adff;
+  --dark-buttons-color: #00322c;
+  --main-indicator-color: #006ca3;
+  --main-indicator-highlight-color: #00adff;
+  --secondary-indicator-red-color: #cd001d;
+  --secondary-indicator-yellow-color: #efd800;
+  --secondary-indicator-green-color: #196d2f;
 
-    /*sizes*/
-    /* --dex-max-width: 600px;
+  /*sizes*/
+  /* --dex-max-width: 600px;
     --dex-max-height: 378px;
     --dex-panel-width: 262px;
     --dex-hinge-width: 76px; */
 
-    --dex-max-width: 600px;
-    --dex-total-height: clamp(200px, 50vw, 700px);
-    --dex-panel-width: calc(var(--dex-total-height)/1.5);
-    --dex-hinge-width: calc(var(--dex-total-height) * 0.1);
-    --dex-border-radius: 23px;
+  --dex-max-width: 600px;
+  --dex-total-height: clamp(200px, 50vw, 700px);
+  --dex-panel-width: calc(var(--dex-total-height) / 1.5);
+  --dex-hinge-width: calc(var(--dex-total-height) * 0.1);
+  --dex-border-radius: 23px;
 
-    --dex-triangle-width: calc(var(--dex-total-height)*0.12);
-
+  --dex-triangle-width: calc(var(--dex-total-height) * 0.12);
 }
