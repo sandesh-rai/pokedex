@@ -1,30 +1,45 @@
-@import '../variables.css';
+@import "../variables.css";
 
 .rightPanel {
-    background-color: var(--primary-dex-color);
-    height: calc(var(--dex-total-height)*0.75);
-    width: var(--dex-panel-width);
-    border-top-right-radius: var(--dex-border-radius);
-    border-bottom-right-radius: var(--dex-border-radius);
-    position: relative;
-    margin-top: auto;
+  background-color: var(--primary-dex-color);
+  height: calc(var(--dex-total-height) * 0.75);
+  width: var(--dex-panel-width);
+  border-top-right-radius: var(--dex-border-radius);
+  border-bottom-right-radius: var(--dex-border-radius);
+  position: relative;
+  margin-top: auto;
 
-    border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
+  border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
 
-    display: grid;
-    grid-template-rows: 25% 25% 50%;
+  display: grid;
+  grid-template-rows: 25% 25% 50%;
 }
 
 .rightPanel::after {
-    position: absolute;
-    content: '';
-    height: calc(var(--dex-total-height)/4);
-    width: var(--dex-panel-width);
-    bottom: calc(var(--dex-total-height) * -0.05);
-    left: 0px;
-    background-color: var(--primary-dex-shadow-color);
-    border-bottom-right-radius: var(--dex-border-radius);
-    border-bottom-left-radius: calc(var(--dex-border-radius)/3);
-    z-index: -1;
+  position: absolute;
+  content: "";
+  height: calc(var(--dex-total-height) / 4);
+  width: var(--dex-panel-width);
+  bottom: calc(var(--dex-total-height) * -0.05);
+  left: 0px;
+  background-color: var(--primary-dex-shadow-color);
+  border-bottom-right-radius: var(--dex-border-radius);
+  border-bottom-left-radius: calc(var(--dex-border-radius) / 3);
+  z-index: -1;
 }
 
+.rightPanel::before {
+  position: absolute;
+  content: "";
+
+  background-color: var(--primary-dex-color);
+  border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
+
+  height: var(--dex-triangle-width);
+  width: calc(var(--dex-panel-width) * 0.45);
+  top: calc(var(--dex-total-height) * -0.12);
+  left: calc(var(--dex-total-height) * -0.017);
+  z-index: -1;
+  border-top: calc(var(--dex-panel-width) * 0.025) solid
+    var(--primary-dex-shadow-color);
+}
