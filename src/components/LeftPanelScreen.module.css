@@ -6,7 +6,9 @@
   height: calc(var(--dex-total-height) * 0.75 * 0.5);
   background-color: var(--secondary-dex-color);
   z-index: 3;
-  border-radius: 10px 10px 10px 45px;
+  border-radius: calc(var(--dex-total-height) * 0.02)
+    calc(var(--dex-total-height) * 0.02) calc(var(--dex-total-height) * 0.02)
+    calc(var(--dex-total-height) * 0.06);
   margin: calc(var(--dex-total-height) * 0.75 * 0.05) auto;
   position: relative;
   border-bottom: calc(var(--dex-total-height) * 0.01) solid grey;
@@ -21,7 +23,7 @@
   height: calc(var(--dex-total-height) * 0.75 * 0.5 * 0.7);
   background: var(--main-screen-color);
   border-top: calc(var(--dex-panel-width) * 0.015) solid #00c5e6;
-  border-radius: 16px;
+  border-radius: calc(var(--dex-panel-width) * 0.03);
 }
 
 .screen > img {
@@ -73,7 +75,7 @@
 }
 
 .bezelBottomLines > div:not(:last-child):not(:first-child) {
-  border-bottom: 3px solid black;
+  border-bottom: calc(var(--dex-total-height) * 0.003) solid black;
   width: calc(var(--dex-total-height) * 0.04);
   margin-right: calc(var(--dex-panel-width) * 0.0375);
 }
