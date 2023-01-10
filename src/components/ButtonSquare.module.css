@@ -1,0 +1,7 @@
+.buttonSquare {
+    height: 100%;
+    width: 100%;
+    border-top: calc(var( --dex-hinge-width) * 0.05) solid #00d5ef;
+    background-color: #5da7c8;
+    margin: calc(var( --dex-hinge-width) * 0.01)
+}

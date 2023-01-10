@@ -2,11 +2,17 @@
 
 .rightPanel {
     background-color: var(--primary-dex-color);
-    height: var(--dex-total-height);
+    height: calc(var(--dex-total-height)*0.75);
     width: var(--dex-panel-width);
     border-top-right-radius: var(--dex-border-radius);
     border-bottom-right-radius: var(--dex-border-radius);
     position: relative;
+    margin-top: auto;
+
+    border-left: calc(var(--dex-total-height) * 0.017) solid #c9020b;
+
+    display: grid;
+    grid-template-rows: 25% 25% 50%;
 }
 
 .rightPanel::after {

@@ -1,0 +1,12 @@
+@import '../variables.css';
+
+.rightPanelScreen {
+    display: flex;
+    width: calc(var(--dex-panel-width) * 0.7);
+    height: 95%;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    background-color: var(--secondary-screen-color);
+    border-top: calc(var(--dex-panel-width) * 0.025) solid #171717;
+}
