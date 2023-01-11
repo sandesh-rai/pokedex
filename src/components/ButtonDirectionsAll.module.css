@@ -1,0 +1,43 @@
+@import "../variables.css";
+
+.allDirections {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.allDirections > * {
+  position: absolute;
+  background: var(--dark-buttons-color);
+  border: none;
+}
+
+.allDirections > *:nth-child(1) {
+  left: 40%;
+}
+
+.allDirections > *:nth-child(2) {
+  left: 12.5%;
+  top: 30%;
+  transform: rotate(-90deg);
+}
+
+.allDirections > *:nth-child(3) {
+  left: 40%;
+  bottom: 0%;
+  transform: rotate(180deg);
+}
+
+.allDirections > *:nth-child(4) {
+  right: 12.5%;
+  top: 30%;
+  transform: rotate(90deg);
+}
+
+.buttonCenter {
+  position: absolute;
+  height: 24%;
+  width: 24%;
+  top: 38%;
+  left: 38%;
+}

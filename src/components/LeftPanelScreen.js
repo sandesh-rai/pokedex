@@ -19,12 +19,9 @@ export default function LeftPanelScreen() {
       <div className={styles.bezelBottom}>
         <div className={styles.bezelBottomDot} />
         <div className={styles.bezelBottomLines}>
-          <div />
-          <div />
-          <div />
-          <div />
-          <div />
-          <div />
+          {[...Array(6).keys()].map((key) => (
+            <div key={key} />
+          ))}
         </div>
       </div>
     </div>

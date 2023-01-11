@@ -17,9 +17,28 @@
   width: calc(var(--dex-total-height) * 0.14);
   border-radius: 50%;
   background-color: var(--main-indicator-color);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(var(--dex-total-height) * 0.14);
+  width: calc(var(--dex-total-height) * 0.14);
+  border-radius: 50%;
+  background-color: var(--main-indicator-color);
 }
 
 .indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 1;
+  height: calc(var(--dex-total-height) * 0.04);
+  width: calc(var(--dex-total-height) * 0.04);
+  border-radius: 50%;
+  background-color: var(--main-indicator-highlight-color);
   content: "";
   position: absolute;
   top: 50%;

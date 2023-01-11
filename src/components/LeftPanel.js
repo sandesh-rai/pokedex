@@ -1,10 +1,11 @@
 import React from "react";
 import LeftPanelScreen from "./LeftPanelScreen";
 import PokedexIndicator from "./PokedexIndicatorPrimary";
-import styles from "./PokedexLeftPanel.module.css";
+import styles from "./LeftPanel.module.css";
 import PokedexLeftPanelDiagonalDetail from "./PokedexLeftPanelDiagonalDetail";
+import LeftPanelLowerGrid from "./LeftPanelLowerGrid";
 
-export default function PokedexLeftPanel() {
+export default function LeftPanel() {
   return (
     <div className={styles.leftPanel}>
       <div className={styles.leftPanelUpper}>
@@ -13,6 +14,7 @@ export default function PokedexLeftPanel() {
       <div className={styles.leftPanelLower}>
         <PokedexLeftPanelDiagonalDetail />
         <LeftPanelScreen />
+        <LeftPanelLowerGrid />
       </div>
     </div>
   );
