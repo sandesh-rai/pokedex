@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Pokedex.module.css";
 import PokedexHinge from "./PokedexHinge";
 import LeftPanel from "./LeftPanel";
-import PokedexRightPanel from "./PokedexRightPanel";
+import RightPanel from "./RightPanel";
 
 export default function Pokedex() {
   return (
@@ -10,7 +10,7 @@ export default function Pokedex() {
       <div className={styles.panels}>
         <LeftPanel />
         <PokedexHinge />
-        <PokedexRightPanel />
+        <RightPanel />
       </div>
     </div>
   );
