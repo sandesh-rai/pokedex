@@ -1,0 +1,14 @@
+@import "../variables.css";
+
+.buttonRow {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  width: calc(var(--dex-panel-width) * 0.7);
+  margin: auto;
+  height: 80%;
+}
+
+.buttonRow > button {
+  background-color: var(--dark-buttons-color);
+  border-top: calc(var(--dex-hinge-width) * 0.05) solid grey;
+}

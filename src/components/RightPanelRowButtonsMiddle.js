@@ -1,8 +1,8 @@
 import React from "react";
 import ButtonSquare from "./ButtonSquare";
-import styles from "./RightPanelRowButtons.module.css";
+import styles from "./RightPanelRowButtonsMiddle.module.css";
 
-export default function RightPanelRowButtons() {
+export default function RightPanelRowButtonsMiddle() {
   return (
     <div className={styles.buttonRow}>
       <ButtonSquare />

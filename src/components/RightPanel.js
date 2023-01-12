@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./RightPanel.module.css";
 import RightPanelGridButtons from "./RightPanelGridButtons";
 import RightPanelScreen from "./RightPanelScreen";
-import RightPanelRowButtons from "./RightPanelRowButtons";
+import RightPanelRowButtonsMiddle from "./RightPanelRowButtonsMiddle";
+import RightPanelRowButtonsBottom from "./RightPanelRowButtonsBottom";
 
 export default function RightPanel() {
   return (
@@ -11,7 +12,9 @@ export default function RightPanel() {
       <RightPanelScreen />
       <RightPanelGridButtons />
       <div /> {/* Empty Spacing */}
-      <RightPanelRowButtons />
+      <RightPanelRowButtonsMiddle />
+      <div />
+      <RightPanelRowButtonsBottom />
     </div>
   );
 }
