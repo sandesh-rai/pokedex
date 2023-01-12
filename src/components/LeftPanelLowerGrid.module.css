@@ -2,24 +2,54 @@
 
 .gridArea {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 0.5fr 1fr 2fr 2fr;
   grid-template-rows: 1.5fr 2.5fr 1.5fr;
   grid-template-areas:
-    "top top right"
-    "middle middle right"
-    ". . .";
+    ". topLeft topMiddle right"
+    ". middle middle right"
+    ". . . .";
 }
 
-.gridArea > div.top {
-  grid-area: top;
-  background-color: green;
+.gridArea > div.topLeft {
+  grid-area: topLeft;
+  display: flex;
+  margin-top: 5%;
+}
+
+.gridArea > div.topMiddle {
+  grid-area: topMiddle;
+  display: flex;
+  justify-content: space-around;
 }
 
 .gridArea > div.middle {
   grid-area: middle;
-  background-color: yellow;
+  display: flex;
 }
 
 .gridArea > div.right {
   grid-area: right;
+}
+
+.circleButton {
+  height: 100%;
+  width: 67%;
+  border-radius: 50%;
+  background-color: var(--dark-buttons-color);
+  margin: 0 auto;
+}
+
+.pillButton {
+  height: 25%;
+  width: 40%;
+  border-radius: calc(var(--dex-panel-width) / 10);
+}
+
+.inputScreen {
+  width: 80%;
+  height: 60%;
+  margin: auto auto 0 auto;
+  background-color: #52ae5f;
+  font-size: calc(var(--dex-total-height) / 40);
+  text-align: center;
 }

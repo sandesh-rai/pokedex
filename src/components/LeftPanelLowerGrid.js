@@ -5,8 +5,28 @@ import styles from "./LeftPanelLowerGrid.module.css";
 export default function LeftPanelLowerGrid() {
   return (
     <div className={styles.gridArea}>
-      <div className={styles.top}>Top</div>
-      <div className={styles.middle}>Middle</div>
+      <div className={styles.topLeft}>
+        <button className={styles.circleButton} />
+      </div>
+
+      <div className={styles.topMiddle}>
+        <button
+          className={styles.pillButton}
+          style={{ backgroundColor: "#e50c35" }}
+        />
+        <button
+          className={styles.pillButton}
+          style={{ backgroundColor: "#00618e" }}
+        />
+      </div>
+
+      <div className={styles.middle}>
+        <input
+          placeholder="Enter Pokemon Here"
+          className={styles.inputScreen}
+        ></input>
+      </div>
+
       <div className={styles.right}>
         <ButtonDirectionsAll />
       </div>

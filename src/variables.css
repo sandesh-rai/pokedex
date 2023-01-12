@@ -16,12 +16,7 @@
   --secondary-indicator-yellow-color: #efd800;
   --secondary-indicator-green-color: #196d2f;
 
-  /*sizes*/
-  /* --dex-max-width: 600px;
-    --dex-max-height: 378px;
-    --dex-panel-width: 262px;
-    --dex-hinge-width: 76px; */
-
+  /* sizes */
   --dex-max-width: 600px;
   --dex-total-height: clamp(200px, 50vw, 700px);
   --dex-panel-width: calc(var(--dex-total-height) / 1.5);
