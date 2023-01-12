@@ -10,6 +10,7 @@ export default function RightPanel() {
       <div className={styles.rightPanelTriangle} />
       <RightPanelScreen />
       <RightPanelGridButtons />
+      <div /> {/* Empty Spacing */}
       <RightPanelRowButtons />
     </div>
   );

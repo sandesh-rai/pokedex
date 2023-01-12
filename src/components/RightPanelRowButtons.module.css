@@ -1,0 +1,22 @@
+@import "../variables.css";
+
+.buttonRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  /* grid-template-areas: "buttonSquare1 buttonSquare2 .  buttonCircle"; */
+  width: calc(var(--dex-panel-width) * 0.7);
+  margin: auto;
+  height: 80%;
+}
+
+.buttonRow > button {
+  background-color: #ffffff;
+  border-top: calc(var(--dex-hinge-width) * 0.05) solid lightgray;
+}
+
+button.buttonCircle {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #ffc94e;
+}

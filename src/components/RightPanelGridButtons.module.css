@@ -1,11 +1,11 @@
-@import '../variables.css';
+@import "../variables.css";
 
 .gridButtons {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: calc(var(--dex-panel-width) * 0.7);
-    margin: auto;
-    /* background-color: var(--secondary-buttons-color); */
-    height: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: calc(var(--dex-panel-width) * 0.7);
+  margin: auto;
+  /* background-color: var(--secondary-buttons-color); */
+  height: 80%;
 }

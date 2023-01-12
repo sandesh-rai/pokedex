@@ -13,7 +13,7 @@
     var(--primary-dex-border-right-color);
 
   display: grid;
-  grid-template-rows: 35% 25% 20% 20%;
+  grid-template-rows: 35% 25% 5% 15% 20%;
 }
 
 .rightPanel,
