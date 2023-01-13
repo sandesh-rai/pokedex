@@ -3,16 +3,21 @@ import { createSlice } from "@reduxjs/toolkit";
 export const pokemonSlice = createSlice({
   name: "pokemon",
   initialState: {
-    allPokemonList: [],
+    allPokemon: [],
+    selectedPokemonData: {},
   },
   reducers: {
-    setPokemonList: (state, action) => {
+    setAllPokemon: (state, action) => {
       state.allPokemonList = [...action.payload];
+    },
+    setSelectedPokemonData: (state, action) => {
+      // console.log(action.payload);
+      state.selectedPokemonData = action.payload;
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { setPokemonList } = pokemonSlice.actions;
+export const { setAllPokemon, setSelectedPokemonData } = pokemonSlice.actions;
 
 export default pokemonSlice.reducer;

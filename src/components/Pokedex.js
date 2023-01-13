@@ -5,21 +5,30 @@ import LeftPanel from "./LeftPanel";
 import RightPanel from "./RightPanel";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { setPokemonList } from "../features/pokemon/pokemonSlice";
+import {
+  setAllPokemon,
+  setSelectedPokemonData,
+} from "../features/pokemon/pokemonSlice";
 
 export default function Pokedex() {
   const dispatch = useDispatch();
 
+  // Call PokeAPI to initialise Pokemon data
   useEffect(() => {
-    const getAllPokemon = async () => {
+    const initialisePokemonData = async () => {
+      // Get and store all pokemon data
       const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon?limit=1000`
+        `https://pokeapi.co/api/v2/pokemon?limit=100000`
       );
+      dispatch(setAllPokemon(data.results));
 
-      dispatch(setPokemonList(data.results));
+      // Get first pokemon data from array, and store it
+      await axios.get(data.results[0].url).then((data) => {
+        dispatch(setSelectedPokemonData(data.data));
+      });
     };
 
-    getAllPokemon();
+    initialisePokemonData();
   }, [dispatch]);
 
   return (
