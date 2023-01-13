@@ -25,7 +25,7 @@
 
 .allDirections > *:nth-child(3) {
   left: 35%;
-  bottom: 13.5%;
+  bottom: 8.5%;
   transform: rotate(180deg);
 }
 
