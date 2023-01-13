@@ -4,15 +4,14 @@ export const pokemonSlice = createSlice({
   name: "pokemon",
   initialState: {
     allPokemon: [],
-    selectedPokemonData: {},
+    selectedPokemon: {},
   },
   reducers: {
     setAllPokemon: (state, action) => {
-      state.allPokemonList = [...action.payload];
+      state.allPokemon = [...action.payload];
     },
     setSelectedPokemonData: (state, action) => {
-      // console.log(action.payload);
-      state.selectedPokemonData = action.payload;
+      state.selectedPokemon = { ...action.payload };
     },
   },
 });

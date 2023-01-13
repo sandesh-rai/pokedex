@@ -1,13 +1,19 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styles from "./LeftPanelScreen.module.css";
 
 export default function LeftPanelScreen() {
+  const selectedPokemon = useSelector((state) => state.pokemon.selectedPokemon);
+  console.log(selectedPokemon);
+
   return (
     <div className={styles.screenContainer}>
       <div className={styles.screen}>
         <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
-          alt="ditto"
+          src={
+            selectedPokemon?.sprites?.other?.["official-artwork"].front_default
+          }
+          alt={selectedPokemon?.name}
         ></img>
       </div>
 
