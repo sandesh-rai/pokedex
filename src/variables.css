@@ -5,6 +5,14 @@
   --primary-dex-inner-color: #c52637;
   --primary-dex-border-right-color: #c9020b;
   --secondary-dex-color: #dedede;
+  --hinge-color: linear-gradient(
+    90deg,
+    #7d0e0e 0,
+    #c21919 30%,
+    #e31a1a 45%,
+    #f05050 60%,
+    #e91212 100%
+  );
   --main-screen-color: #00dbff;
   --secondary-screen-color: #292a27;
   --primary-buttons-color: #00adff;

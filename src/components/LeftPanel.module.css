@@ -87,16 +87,3 @@
   height: calc(var(--dex-triangle-width) * 0.5);
   width: calc(var(--dex-triangle-width) * 0.5);
 }
-
-.leftPanel::after {
-  position: absolute;
-  content: "";
-  height: calc(var(--dex-total-height) / 4);
-  width: var(--dex-panel-width);
-  bottom: calc(var(--dex-total-height) * -0.05);
-  left: 0px;
-  background-color: var(--primary-dex-shadow-color);
-  border-bottom-left-radius: var(--dex-border-radius);
-  border-bottom-right-radius: calc(var(--dex-border-radius) / 3);
-  z-index: -1;
-}

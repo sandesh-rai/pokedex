@@ -21,21 +21,6 @@ rightPanel * {
   box-sizing: border-box;
 }
 
-.rightPanel::after {
-  position: absolute;
-  content: "";
-  height: calc(var(--dex-total-height) / 4);
-  width: var(--dex-panel-width);
-  bottom: calc(
-    (var(--dex-total-height) * -0.05) + (calc(var(--dex-total-height) * 0.017))
-  );
-  left: calc(var(--dex-total-height) * -0.017);
-  background-color: var(--primary-dex-shadow-color);
-  border-bottom-right-radius: var(--dex-border-radius);
-  border-bottom-left-radius: calc(var(--dex-border-radius) / 3);
-  z-index: -1;
-}
-
 .rightPanel::before {
   position: absolute;
   content: "";

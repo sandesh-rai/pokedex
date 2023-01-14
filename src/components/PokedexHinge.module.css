@@ -1,47 +1,34 @@
-@import '../variables.css';
+@import "../variables.css";
 
 .hinge {
-    background-color: var(--primary-dex-color);
-    height: var(--dex-total-height);
-    width: var(--dex-hinge-width);
-    position: relative;
-    z-index: 1;
+  background: var(--hinge-color);
+  height: var(--dex-total-height);
+  width: var(--dex-hinge-width);
+  position: relative;
+  z-index: 1;
 
-    border-left: 1px solid var(--primary-dex-shadow-color);
-    border-right: 1px solid var(--primary-dex-shadow-color);
+  border-left: 1px solid var(--primary-dex-shadow-color);
+  border-right: 1px solid var(--primary-dex-shadow-color);
 }
 
-.hinge::after{
-    content: '';
-    width: var(--dex-hinge-width);
-    height: calc(var(--dex-hinge-width)/2);
-    background: var(--primary-dex-shadow-color);
-    border-radius: 50%;
-    position: absolute;
-    bottom: calc((var(--dex-hinge-width)/-4) + 2px);
-    z-index: 1;
+.hinge::after {
+  content: "";
+  width: var(--dex-hinge-width);
+  height: calc(var(--dex-hinge-width) / 2);
+  background: var(--hinge-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: calc((var(--dex-hinge-width) / -4) + 2px);
+  z-index: 1;
 }
 
-.hinge::before{
-    content: '';
-    width: var(--dex-hinge-width);
-    height: calc(var(--dex-hinge-width)/2);
-    background: var(--primary-dex-color);
-    border-radius: 50%;
-    position: absolute;
-    top: calc((var(--dex-hinge-width)/-4) + 2px);
-    z-index: -1;
+.hinge::before {
+  content: "";
+  width: var(--dex-hinge-width);
+  height: calc(var(--dex-hinge-width) / 2);
+  background: var(--hinge-color);
+  border-radius: 50%;
+  position: absolute;
+  top: calc((var(--dex-hinge-width) / -4) + 2px);
+  z-index: -1;
 }
-
-.hinge > div {
-    position: absolute;
-    height: calc(var(--dex-total-height) * 0.8);
-    width: calc(var(--dex-hinge-width) * 0.2);
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fb5b7a;
-    border-radius: var(--dex-border-radius);
-}
-
-
