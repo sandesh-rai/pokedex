@@ -10,6 +10,7 @@
   position: absolute;
   background: var(--dark-buttons-color);
   border: none;
+  cursor: pointer;
 }
 
 .allDirections > *:nth-child(1) {

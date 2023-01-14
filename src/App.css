@@ -6,5 +6,5 @@ body {
 }
 
 button {
-  cursor: pointer;
+  cursor: not-allowed;
 }
