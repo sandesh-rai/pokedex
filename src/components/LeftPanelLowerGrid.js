@@ -22,7 +22,7 @@ export default function LeftPanelLowerGrid() {
 
       <div className={styles.middle}>
         <input
-          value="Use D-Pad to select"
+          value="Use D-Pad (+) to select"
           className={styles.inputScreen}
           disabled
         ></input>
