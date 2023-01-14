@@ -21,7 +21,11 @@ export default function LeftPanelLowerGrid() {
       </div>
 
       <div className={styles.middle}>
-        <div className={styles.inputScreen}></div>
+        <input
+          value="Use D-Pad to select"
+          className={styles.inputScreen}
+          disabled
+        ></input>
       </div>
 
       <div className={styles.right}>
