@@ -8,7 +8,6 @@ export default function ButtonDirectionsSingle({
 }) {
   function buttonClicked() {
     if (["up", "right", "left", "down"].includes(direction)) {
-      console.log(direction);
       // Increase ID
       if (["up", "right"].includes(direction)) {
         setCurrPkmnId(currPkmnId + 1);

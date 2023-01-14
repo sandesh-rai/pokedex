@@ -13,9 +13,11 @@ export default function ButtonDirectionsAll() {
 
   useEffect(() => {
     // Get selected pokemon, and update store
+    if (!allPkmn[currPkmnId - 1]) return;
+
     const nextPokemon = async () => {
       await axios.get(allPkmn[currPkmnId - 1].url).then((data) => {
-        dispatch(setSelectedPokemonData(data.data));
+        dispatch(setSelectedPokemonData(data?.data));
       });
     };
 

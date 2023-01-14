@@ -4,7 +4,6 @@ import styles from "./LeftPanelScreen.module.css";
 
 export default function LeftPanelScreen() {
   const selectedPokemon = useSelector((state) => state.pokemon.selectedPokemon);
-  console.log(selectedPokemon);
 
   return (
     <div className={styles.screenContainer}>
