@@ -10,4 +10,13 @@
   background-color: var(--secondary-screen-color);
   border-top: calc(var(--dex-panel-width) * 0.025) solid #171717;
   z-index: 3;
+  color: white;
+  padding: calc(var(--dex-panel-width) * 0.03)
+    calc(var(--dex-panel-width) * 0.05);
+}
+
+.rightPanelScreen h2 {
+  font-size: calc(var(--dex-panel-width) * 0.06);
+  margin: 0;
+  font-weight: 500;
 }
