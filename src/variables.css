@@ -38,7 +38,25 @@
   --dex-triangle-width: calc(var(--dex-total-height) * 0.12);
 }
 
+@media only screen and (max-width: 900px) {
+  :root {
+    --dex-total-height: 70vw;
+  }
+}
+
 @media only screen and (max-width: 769px) {
+  :root {
+    --dex-total-height: 80vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    --dex-total-height: 90vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   :root {
     --dex-total-height: 100vw;
   }

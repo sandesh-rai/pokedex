@@ -80,7 +80,7 @@ rightPanel * {
   width: calc(var(--dex-triangle-width) * 0.5);
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 900px) {
   .rightPanel {
     display: none;
   }
