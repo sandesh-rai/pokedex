@@ -79,3 +79,9 @@ rightPanel * {
   height: calc(var(--dex-triangle-width) * 0.5);
   width: calc(var(--dex-triangle-width) * 0.5);
 }
+
+@media only screen and (max-width: 769px) {
+  .rightPanel {
+    display: none;
+  }
+}

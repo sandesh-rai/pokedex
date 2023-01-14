@@ -37,3 +37,9 @@
   --dex-border-radius: calc(var(--dex-panel-width) * 0.1);
   --dex-triangle-width: calc(var(--dex-total-height) * 0.12);
 }
+
+@media only screen and (max-width: 769px) {
+  :root {
+    --dex-total-height: 100vw;
+  }
+}
