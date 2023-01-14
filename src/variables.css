@@ -18,8 +18,13 @@
   --primary-buttons-color: #00adff;
   --secondary-buttons-color: #00adff;
   --dark-buttons-color: #00322c;
-  --main-indicator-color: #006ca3;
-  --main-indicator-highlight-color: #00adff;
+  --main-indicator-color: radial-gradient(
+    circle farthest-corner at 50% 45%,
+    rgb(208, 216, 218) 10%,
+    rgb(109, 201, 224) 25%,
+    rgb(46, 73, 152) 70%,
+    rgb(31, 109, 177) 100%
+  );
   --secondary-indicator-red-color: #cd001d;
   --secondary-indicator-yellow-color: #efd800;
   --secondary-indicator-green-color: #196d2f;
