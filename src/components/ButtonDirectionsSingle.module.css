@@ -7,3 +7,10 @@
   border-radius: calc(var(--dex-panel-width) * 0.02)
     calc(var(--dex-panel-width) * 0.02) 0 0;
 }
+
+.singleDirection:active {
+  filter: none !important;
+  border-top: calc(var(--dex-panel-width) * 0.005) solid #777;
+  border-left: calc(var(--dex-panel-width) * 0.005) solid #777;
+  border-right: calc(var(--dex-panel-width) * 0.005) solid #777;
+}
