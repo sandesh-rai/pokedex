@@ -1,6 +1,34 @@
-import React from "react";
 import styles from "./ButtonDirectionsSingle.module.css";
 
-export default function ButtonDirectionsSingle() {
-  return <button className={styles.singleDirection}></button>;
+export default function ButtonDirectionsSingle({
+  direction,
+  setCurrPkmnId,
+  currPkmnId,
+  allPkmn,
+}) {
+  function buttonClicked() {
+    if (["up", "right", "left", "down"].includes(direction)) {
+      console.log(direction);
+      // Increase ID
+      if (["up", "right"].includes(direction)) {
+        setCurrPkmnId(currPkmnId + 1);
+
+        if (currPkmnId >= allPkmn.length) {
+          setCurrPkmnId(1);
+        }
+      }
+      // Decrease ID
+      else if (["down", "left"].includes(direction)) {
+        if (currPkmnId === 1) {
+          setCurrPkmnId(allPkmn.length);
+        } else {
+          setCurrPkmnId(currPkmnId - 1);
+        }
+      }
+    }
+  }
+
+  return (
+    <button className={styles.singleDirection} onClick={buttonClicked}></button>
+  );
 }

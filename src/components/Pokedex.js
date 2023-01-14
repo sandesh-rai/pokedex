@@ -18,7 +18,7 @@ export default function Pokedex() {
     const initialisePokemonData = async () => {
       // Get and store all pokemon data
       const { data } = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon?limit=100000`
+        `https://pokeapi.co/api/v2/pokemon?limit=905`
       );
       dispatch(setAllPokemon(data.results));
 
