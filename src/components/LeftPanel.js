@@ -2,7 +2,7 @@ import React from "react";
 import LeftPanelScreen from "./LeftPanelScreen";
 import PokedexIndicator from "./PokedexIndicatorPrimary";
 import styles from "./LeftPanel.module.css";
-import PokedexLeftPanelDiagonalDetail from "./PokedexLeftPanelDiagonalDetail";
+import LeftPanelDiagonalDetail from "./LeftPanelDiagonalDetail";
 import LeftPanelLowerGrid from "./LeftPanelLowerGrid";
 
 export default function LeftPanel() {
@@ -12,7 +12,7 @@ export default function LeftPanel() {
         <PokedexIndicator />
       </div>
       <div className={styles.leftPanelLower}>
-        <PokedexLeftPanelDiagonalDetail />
+        <LeftPanelDiagonalDetail />
         <LeftPanelScreen />
         <LeftPanelLowerGrid />
       </div>
