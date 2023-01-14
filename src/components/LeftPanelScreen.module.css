@@ -24,6 +24,7 @@
   background: var(--main-screen-color);
   border-top: calc(var(--dex-panel-width) * 0.015) solid #00c5e6;
   border-radius: calc(var(--dex-panel-width) * 0.03);
+  border-style: inset;
 }
 
 .screen > img {

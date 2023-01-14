@@ -54,4 +54,5 @@
   border-radius: 50%;
   transform: translate(-28%, -28%);
   background-color: #00201d;
+  border-style: inset;
 }

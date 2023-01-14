@@ -52,4 +52,6 @@
   background-color: #52ae5f;
   font-size: calc(var(--dex-total-height) / 40);
   text-align: center;
+  border-style: inset;
+  border-color: grey;
 }

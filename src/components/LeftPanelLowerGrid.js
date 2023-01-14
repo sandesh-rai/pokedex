@@ -21,10 +21,7 @@ export default function LeftPanelLowerGrid() {
       </div>
 
       <div className={styles.middle}>
-        <input
-          placeholder="Enter Pokemon Here"
-          className={styles.inputScreen}
-        ></input>
+        <div className={styles.inputScreen}></div>
       </div>
 
       <div className={styles.right}>
