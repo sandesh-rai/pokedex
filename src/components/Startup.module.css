@@ -1,0 +1,80 @@
+@import "../variables.css";
+
+.startUpContainer > * {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.startUpContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.startUpContainer > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 60%;
+  background-color: rgb(137, 3, 3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 32px;
+  padding: clamp(1rem, 3.5vw, 4rem);
+  backdrop-filter: blur(10px);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0) 75%
+  );
+}
+
+.startUpContainer h2 {
+  font-size: clamp(2.5rem, 10vw, 8rem);
+  color: #dedede;
+}
+
+.startUpContainer h3 {
+  font-size: clamp(1.25rem, 5vw, 3rem);
+  color: #dedede;
+  padding-top: 1rem;
+}
+
+.startUpContainer .buttonsRow {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.startUpContainer .buttonsRow > button {
+  width: 20rem;
+  min-width: 10rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.startUpContainer .buttonsRow > button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
