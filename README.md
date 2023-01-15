@@ -1,4 +1,4 @@
-# Reponsive Pokédex React.js Project
+# Responsive Pokédex React.js Project
 
 ## Introduction
 - I created this project to practice my skills with React.js, React Redux and CSS Grid Layout
