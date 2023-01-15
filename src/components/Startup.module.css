@@ -68,7 +68,6 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  text-transform: uppercase;
   letter-spacing: 2px;
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;

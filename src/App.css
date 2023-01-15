@@ -8,3 +8,7 @@ body {
 button {
   cursor: not-allowed;
 }
+
+* {
+  font-family: fantasy;
+}
