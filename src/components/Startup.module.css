@@ -49,18 +49,18 @@ button {
   padding-top: 1rem;
 }
 
-.startUpContainer .buttonsRow {
+.buttonsRow {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.startUpContainer .buttonsRow > button {
+.buttonsRow > button {
   width: 20rem;
   min-width: 10rem;
   border-radius: 20px;
   margin-top: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   padding: 1.5rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 700;
@@ -76,4 +76,15 @@ button {
 
 .startUpContainer .buttonsRow > button:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width: 930px) {
+  .startUpContainer > section {
+    width: 75%;
+  }
+  .buttonsRow > button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 15rem;
+  }
 }
