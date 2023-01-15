@@ -1,8 +1,30 @@
+import axios from "axios";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setSelectedPokemonData } from "../features/pokemon/pokemonSlice";
 import ButtonDirectionsAll from "./ButtonDirectionsAll";
 import styles from "./LeftPanelLowerGrid.module.css";
 
 export default function LeftPanelLowerGrid() {
+  const allPokemon = useSelector((state) => state.pokemon.allPokemon);
+  const dispatch = useDispatch();
+
+  function handleNameInput(event) {
+    let filteredPokemon = allPokemon.filter((pkmn) =>
+      pkmn.name.toLowerCase().includes(event.target.value.toLowerCase())
+    );
+
+    if (filteredPokemon.length === 1) {
+      const selectPokemon = async () => {
+        await axios.get(filteredPokemon[0].url).then((data) => {
+          dispatch(setSelectedPokemonData(data?.data));
+        });
+      };
+
+      selectPokemon();
+    }
+  }
+
   return (
     <div className={styles.gridArea}>
       <div className={styles.topLeft}>
@@ -22,9 +44,9 @@ export default function LeftPanelLowerGrid() {
 
       <div className={styles.middle}>
         <input
-          value="Use D-Pad (+) to select"
+          placeholder="Search Pokémon"
+          onChange={handleNameInput}
           className={styles.inputScreen}
-          disabled
         ></input>
       </div>
 
