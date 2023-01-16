@@ -1,26 +1,32 @@
-# Responsive Pokédex React.js Project
+# 🔴 React Pokédex Project ⚪
 
-## Introduction
-- I created this project to practice my skills with React.js, React Redux and CSS Grid Layout
-- The visuals of the Pokédex was designed purely with HTML elements styled with CSS (including layouts with CSS Grid and Flexbox) - so doesn't use any SVG images
-- New Pokémon can be selected using the directional buttons on the D-Pad, which fetches the required data from the PokéAPI
+## 🎮 Live Demo
+https://sandesh-rai.github.io/pokedex/
+
+## 📄 Introduction
+- I created this project to apply my front-end knowledge with React.js, React Redux and CSS Grid
+- The look of the Pokédex was achieved without using any SVGs where:
+    - Individual HTML elements were styled with pure CSS
+    - Responsive element layout was achieved using CSS Grid, CSS Flexbox and CSS Positioning
+- The PokéAPI (RESTful Pokémon API) is used to retrieve data, and React Redux is used for state management
+- New Pokémon can be selected with user input via the directional-pad or text box
 
 <img src="https://github.com/sandesh-rai/pokedex/blob/main/src/assets/screenshot_desktop.png" alt="game-desktop"/>
 
-## Technologies
+## 🚀 Technologies
 - **[ReactJS](https://reactjs.org)**
 - **[React Redux](https://react-redux.js.org/)**
 - **[Axios](https://github.com/axios/axios)**
 - **[PokéAPI](https://pokeapi.co/)**
 
-### Responsive Demo
+## ▶️ Responsive Demo (GIF)
 ![Responsive Demo](https://github.com/sandesh-rai/pokedex/blob/main/src/assets/pokedex_demo.gif)
 
-## Future Improvements
+## 🔮 Future Improvements
 - Adding functionality to remaining buttons
 - Text to speech to read out Pokémon information
 
-## Installation
+## ⚡ Installation
 
 You can clone this repository using __Git__:
 ```bash
