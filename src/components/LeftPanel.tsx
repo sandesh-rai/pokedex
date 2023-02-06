@@ -1,11 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 import LeftPanelScreen from "./LeftPanelScreen";
-import PokedexIndicator from "./PokedexIndicatorPrimary";
+import { PokedexIndicator } from "./PokedexIndicatorPrimary";
 import styles from "./LeftPanel.module.css";
-import LeftPanelDiagonalDetail from "./LeftPanelDiagonalDetail";
+import { LeftPanelDiagonalDetail } from "./LeftPanelDiagonalDetail";
 import LeftPanelLowerGrid from "./LeftPanelLowerGrid";
 
-export default function LeftPanel() {
+export const LeftPanel: FC = () => {
   return (
     <div className={styles.leftPanel}>
       <div className={styles.leftPanelUpper}>
@@ -18,4 +18,4 @@ export default function LeftPanel() {
       </div>
     </div>
   );
-}
+};

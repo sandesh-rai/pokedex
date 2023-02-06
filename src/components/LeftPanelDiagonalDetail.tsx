@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./LeftPanel.module.css";
 
-export default function PokedexLeftPanelDiagonalDetail() {
+export const LeftPanelDiagonalDetail: FC = () => {
   return (
     <div className={styles.leftPanelTriangle}>
       <div></div>
     </div>
   );
-}
+};
