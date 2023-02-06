@@ -1,10 +1,13 @@
-import React from "react";
+import { FC } from "react";
 import styles from "./Startup.module.css";
 
-export default function Startup({ startAppPressed }) {
+interface StartUpProps {
+  startAppPressed: () => void;
+}
+
+export const Startup: FC<StartUpProps> = ({ startAppPressed }) => {
   function openLink() {
-    var win = window.open("https://www.linkedin.com/in/sandesh-rai/", "_blank");
-    win.focus();
+    window.open("https://www.linkedin.com/in/sandesh-rai/", "_blank");
   }
   return (
     <div className={styles.startUpContainer}>
@@ -20,4 +23,4 @@ export default function Startup({ startAppPressed }) {
       </section>
     </div>
   );
-}
+};
