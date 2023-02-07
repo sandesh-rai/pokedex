@@ -4,12 +4,15 @@ import styles from "./ButtonDirectionsAll.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { setSelectedPokemonData } from "../features/pokemon/pokemonSlice";
+import { SelectedPokemon } from "../types";
 
 export default function ButtonDirectionsAll() {
   const dispatch = useDispatch();
-  const allPkmn = useSelector((state) => state.pokemon.allPokemon);
+  const allPkmn = useSelector(
+    (state: SelectedPokemon) => state.pokemon.allPokemon
+  );
 
-  const [currPkmnId, setCurrPkmnId] = useState(1);
+  const [currPkmnId, setCurrPkmnId] = useState<number>(1);
 
   useEffect(() => {
     // Get selected pokemon, and update store

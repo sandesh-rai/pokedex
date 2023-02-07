@@ -1,11 +1,12 @@
 import styles from "./ButtonDirectionsSingle.module.css";
+import { ButtonDirectionsSingleProps } from "../types";
 
 export default function ButtonDirectionsSingle({
   direction,
   setCurrPkmnId,
   currPkmnId,
   allPkmn,
-}) {
+}: ButtonDirectionsSingleProps) {
   function buttonClicked() {
     if (["up", "right", "left", "down"].includes(direction)) {
       // Increase ID

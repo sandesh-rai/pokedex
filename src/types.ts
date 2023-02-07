@@ -14,9 +14,18 @@ export type SelectedPokemon = {
       };
       name: string;
     };
-    allPokemon: {
-      name: string;
-      url: string;
-    }[];
+    allPokemon: AllPokemon;
   };
+};
+
+export type AllPokemon = {
+  name: string;
+  url: string;
+}[];
+
+export type ButtonDirectionsSingleProps = {
+  direction: "up" | "right" | "left" | "down";
+  setCurrPkmnId: React.Dispatch<React.SetStateAction<number>>;
+  currPkmnId: number;
+  allPkmn: AllPokemon;
 };
