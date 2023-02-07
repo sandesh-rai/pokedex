@@ -1,6 +1,5 @@
-import React, { FC } from "react";
 import styles from "./PokedexIndicatorPrimary.module.css";
 
-export const PokedexIndicator: FC = () => {
+export const PokedexIndicator = (): JSX.Element => {
   return <div className={styles.indicator} />;
 };

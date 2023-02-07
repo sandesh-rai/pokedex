@@ -1,11 +1,10 @@
-import { FC } from "react";
 import styles from "./Startup.module.css";
 
-interface StartUpProps {
+type StartUpProps = {
   startAppPressed: () => void;
-}
+};
 
-export const Startup: FC<StartUpProps> = ({ startAppPressed }) => {
+export const Startup = ({ startAppPressed }: StartUpProps): JSX.Element => {
   function openLink() {
     window.open("https://www.linkedin.com/in/sandesh-rai/", "_blank");
   }

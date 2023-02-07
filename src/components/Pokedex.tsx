@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./Pokedex.module.css";
 import PokedexHinge from "./PokedexHinge";
 import { LeftPanel } from "./LeftPanel";
@@ -10,7 +10,7 @@ import {
   setSelectedPokemonData,
 } from "../features/pokemon/pokemonSlice";
 
-export const Pokedex: FC = () => {
+export const Pokedex = (): JSX.Element => {
   const dispatch = useDispatch();
 
   // Call PokeAPI to initialise Pokemon data
