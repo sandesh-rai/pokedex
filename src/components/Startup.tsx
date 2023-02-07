@@ -1,8 +1,5 @@
+import { StartUpProps } from "../types";
 import styles from "./Startup.module.css";
-
-type StartUpProps = {
-  startAppPressed: () => void;
-};
 
 export const Startup = ({ startAppPressed }: StartUpProps): JSX.Element => {
   function openLink() {

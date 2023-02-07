@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonSquare from "./ButtonSquare";
 import styles from "./RightPanelGridButtons.module.css";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./RightPanel.module.css";
 import RightPanelGridButtons from "./RightPanelGridButtons";
 import RightPanelScreen from "./RightPanelScreen";

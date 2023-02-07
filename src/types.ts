@@ -1,3 +1,7 @@
+export type StartUpProps = {
+  startAppPressed: () => void;
+};
+
 export type SelectedPokemon = {
   pokemon: {
     selectedPokemon: {
