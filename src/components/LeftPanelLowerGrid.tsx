@@ -1,15 +1,18 @@
 import axios from "axios";
-import React from "react";
+import { ChangeEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedPokemonData } from "../features/pokemon/pokemonSlice";
 import ButtonDirectionsAll from "./ButtonDirectionsAll";
 import styles from "./LeftPanelLowerGrid.module.css";
+import { SelectedPokemon } from "../types";
 
 export default function LeftPanelLowerGrid() {
-  const allPokemon = useSelector((state) => state.pokemon.allPokemon);
+  const allPokemon = useSelector(
+    (state: SelectedPokemon) => state.pokemon.allPokemon
+  );
   const dispatch = useDispatch();
 
-  function handleNameInput(event) {
+  function handleNameInput(event: ChangeEvent<HTMLInputElement>) {
     let filteredPokemon = allPokemon.filter((pkmn) =>
       pkmn.name.toLowerCase().includes(event.target.value.toLowerCase())
     );

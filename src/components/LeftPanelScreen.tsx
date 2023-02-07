@@ -1,21 +1,6 @@
-import React from "react";
 import { useSelector } from "react-redux";
+import { SelectedPokemon } from "../types";
 import styles from "./LeftPanelScreen.module.css";
-
-type SelectedPokemon = {
-  pokemon: {
-    selectedPokemon: {
-      sprites: {
-        other: {
-          "official-artwork": {
-            front_default: string;
-          };
-        };
-      };
-      name: string;
-    };
-  };
-};
 
 export default function LeftPanelScreen() {
   const selectedPokemon = useSelector(
